@@ -1,6 +1,8 @@
 name: My First CI workflow
 
-on: [push]
+on:
+  push:
+    branches: [master]
 
 jobs:
   build:
@@ -9,6 +11,8 @@ jobs:
     steps:
       - name: Observe current directory
         run: ls -a && pwd
+      - name: Find scripts
+        run: find /home -n "*.py"
       - name: Install deps
         run: pip3 install requests
       - name: Run
