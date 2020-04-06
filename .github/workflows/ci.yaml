@@ -9,10 +9,9 @@ jobs:
     name: Request
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Observe current directory
         run: ls -a && pwd
-      - name: Find scripts
-        run: find /home -name "*.py"
       - name: Install deps
         run: pip3 install requests
       - name: Run
