@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Observe current direct
-        run: pwd && ls && ls ..
+        run: ls && ls ..
       - name: Install deps
         run: pip3 install requests
       - name: Run
