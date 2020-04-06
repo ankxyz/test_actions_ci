@@ -1,0 +1,13 @@
+name: My First CI workflow
+
+on: [push]
+
+jobs:
+  build:
+    name: Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install deps
+        run: pip3.7 install requests
+      - name: Run
+        run: python3.7 app.py
