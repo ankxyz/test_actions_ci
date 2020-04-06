@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install deps
-        run: pip3.7 install requests
+        run: pip3 install requests
       - name: Run
-        run: python3.7 app.py
+        run: python3.6 app.py
