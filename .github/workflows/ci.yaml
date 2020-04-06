@@ -12,7 +12,7 @@ jobs:
       - name: Observe current directory
         run: ls -a && pwd
       - name: Find scripts
-        run: find /home -n "*.py"
+        run: find /home -name "*.py"
       - name: Install deps
         run: pip3 install requests
       - name: Run
